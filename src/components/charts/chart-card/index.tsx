@@ -6,10 +6,11 @@ interface IChartCard {
   children: ReactNode;
   footer: JSX.Element;
   title: string | JSX.Element;
-  value: number | null;
+  value: number | string | JSX.Element | null;
+  action?: JSX.Element | null;
 }
 export const ChartCard: FunctionComponent<IChartCard> = memo(
-  ({ children, title, value, footer }) => {
+  ({ children, title, value, footer, action }) => {
     return (
       <Card bodyStyle={{ padding: '20px 24px 8px 24px' }}>
         {/* // <Card bodyStyle={{ padding: '20px 24px 8px 24px' }} loading> */}
@@ -19,7 +20,7 @@ export const ChartCard: FunctionComponent<IChartCard> = memo(
             <div className={'metaWrap'}>
               <div className={'meta'}>
                 <span className={'title'}>{title}</span>
-                {/* <span className={'action'}>action</span> */}
+                <span className={'action'}>{action}</span>
               </div>
               <div className={'total'}>{value}</div>
             </div>

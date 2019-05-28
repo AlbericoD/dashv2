@@ -43,6 +43,11 @@ const options: IOptions[] = [
     key: 'activated',
     icon: 'table',
     name: 'Live Activated Channels'
+  },
+  {
+    key: 'build',
+    icon: 'build',
+    name: 'Manual build graphic'
   }
 ];
 

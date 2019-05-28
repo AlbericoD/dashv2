@@ -7,13 +7,13 @@ import { HashRouter, Route, Link } from 'react-router-dom';
 
 import './app.less';
 
-const IntroduceRow = React.lazy(() => import('./components/introduce-row'));
+const CraftControlRow = React.lazy(() => import('./components/craft/controls'));
 const OverViewTab = React.lazy(() => import('./components/graphs/overview'));
 
 const OverViewWraper = () => (
   <>
     <Suspense fallback={<PageLoading />}>
-      <IntroduceRow />
+      <CraftControlRow />
     </Suspense>
     <Suspense fallback={<Skeleton paragraph={{ rows: 4 }} />}>
       <OverViewTab
@@ -32,7 +32,7 @@ const App: React.FC = () => {
     <HashRouter basename='/'>
       <Basiclayout>
         <GridContent>
-          <Suspense fallback={<PageLoading />}>
+          {/* <Suspense fallback={<PageLoading />}>
             <ul>
               <li>
                 <Link to='/'>Home</Link>
@@ -47,7 +47,7 @@ const App: React.FC = () => {
                 <Link to='/ipsum'>ipsum</Link>
               </li>
             </ul>
-          </Suspense>
+          </Suspense> */}
 
           <Route exact path='/' component={OverViewWraper} />
           <Route path='/about' component={() => <h1>about</h1>} />
