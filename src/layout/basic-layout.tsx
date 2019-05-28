@@ -10,7 +10,7 @@ interface IBasicLayout {
   children: ReactNode;
 }
 
-const handle = () => console.log('handle');
+// const handle = () => console.log('handle');
 export const Basiclayout: FunctionComponent<IBasicLayout> = ({ children }): JSX.Element => {
   const [colladpsed, toggle] = useState<boolean>(false);
   useEffect(() => {

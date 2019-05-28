@@ -3,7 +3,7 @@ import { Basiclayout } from './layout/basic-layout';
 import PageLoading from './components/loading/page-loading';
 import { GridContent } from './components/grids/grid-content';
 import { Skeleton } from 'antd';
-import { HashRouter, Route, Link } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 
 import './app.less';
 
@@ -50,7 +50,7 @@ const App: React.FC = () => {
           </Suspense> */}
 
           <Route exact path='/' component={OverViewWraper} />
-          <Route path='/about' component={() => <h1>about</h1>} />
+          <Route path='/about' component={() => <h1>about deploys travis</h1>} />
           <Route path='/lorem' component={() => <h1>lorem</h1>} />
           <Route path='/ipsum' component={() => <h1>ipsum</h1>} />
         </GridContent>

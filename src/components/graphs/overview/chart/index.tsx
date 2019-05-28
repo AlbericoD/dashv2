@@ -2,16 +2,11 @@ import React, { memo } from 'react';
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
   Legend,
-  LineChart,
-  Line,
-  AreaChart,
-  Area,
   ResponsiveContainer,
   Brush
 } from 'recharts';

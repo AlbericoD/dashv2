@@ -1,15 +1,5 @@
 import React, { memo } from 'react';
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer
-} from 'recharts';
+import { BarChart, Bar, Tooltip, ResponsiveContainer } from 'recharts';
 import '../index.less';
 
 const data = [

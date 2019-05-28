@@ -1,5 +1,5 @@
 import React, { memo, NamedExoticComponent } from 'react';
-import { Row, Col, Card, Tabs, DatePicker, Table, Button, Icon } from 'antd';
+import { Row, Col, Card, Tabs, DatePicker, Table, Button } from 'antd';
 import moment from 'moment';
 // import { FormattedMessage, formatMessage } from 'umi-plugin-react/locale';
 // import numeral from 'numeral';
